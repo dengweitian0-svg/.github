@@ -1,0 +1,50 @@
+name: ✨ 功能需求
+description: 提出新功能、改进建议或能力扩展
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请尽量先描述“为什么需要”，再描述“希望怎么做”。
+
+  - type: textarea
+    id: background
+    attributes:
+      label: 背景
+      description: 当前遇到了什么问题，或为什么需要这个功能？
+      placeholder: 请说明使用场景和动机……
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目标
+      description: 希望最终实现什么效果？
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议方案
+      description: 如果已有实现思路，可以在这里说明；没有也可以留空。
+      placeholder: 可以包含交互、接口、数据结构或技术方案……
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 验收标准
+      description: 什么条件满足时，可以认为该需求已经完成？
+      placeholder: |
+        - [ ] 条件 1
+        - [ ] 条件 2
+        - [ ] 条件 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 可附加截图、链接、参考项目或其他上下文。
