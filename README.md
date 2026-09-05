@@ -10,25 +10,22 @@
 - 功能需求 Issue 模板
 - 重构 Issue 模板
 - Pull Request 模板
-- `CONTRIBUTING.md` 贡献规范
+- `CONTRIBUTING.md` 通用贡献规范
 
-## 分支策略
+## 使用原则
 
-默认采用 `main + dev` 双主干模式：
+这里仅维护跨项目通用的开发规范，例如：
 
-- `main`：稳定分支，不用于日常开发，仅用于版本级更新和正式发布。
-- `dev`：日常开发集成分支，所有功能、Bug 修复、重构等修改应优先合并到这里。
+- Issue 驱动开发
+- 分支命名规范
+- Conventional Commits
+- Pull Request 基本要求
+- CI 通过后再合并
 
-日常开发关系：
+具体项目的分支模型、稳定分支、开发分支、PR 目标分支和发布流程，应由项目自己的 `CONTRIBUTING.md` 定义。
 
-`main ← dev ← feat/fix/refactor/docs/test/chore`
+推荐的通用开发闭环：
 
-日常开发流程：
-
-`Issue → 从 dev 创建分支 → Commit → Pull Request 到 dev → CI → Merge dev → Close Issue`
-
-版本发布流程：
-
-`dev → Release PR → CI / 验证 → main → Version Release`
+`Issue → Branch → Commit → Pull Request → CI → Merge → Close Issue`
 
 具体规则请查看 `CONTRIBUTING.md`。
