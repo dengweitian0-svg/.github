@@ -12,8 +12,23 @@
 - Pull Request 模板
 - `CONTRIBUTING.md` 贡献规范
 
-推荐的个人开发流程：
+## 分支策略
 
-`Issue → Branch → Commit → Pull Request → CI → Merge → Close Issue`
+默认采用 `main + dev` 双主干模式：
+
+- `main`：稳定分支，不用于日常开发，仅用于版本级更新和正式发布。
+- `dev`：日常开发集成分支，所有功能、Bug 修复、重构等修改应优先合并到这里。
+
+日常开发关系：
+
+`main ← dev ← feat/fix/refactor/docs/test/chore`
+
+日常开发流程：
+
+`Issue → 从 dev 创建分支 → Commit → Pull Request 到 dev → CI → Merge dev → Close Issue`
+
+版本发布流程：
+
+`dev → Release PR → CI / 验证 → main → Version Release`
 
 具体规则请查看 `CONTRIBUTING.md`。
