@@ -1,0 +1,53 @@
+name: 🐛 Bug 报告
+description: 报告可复现的问题或异常行为
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢提交问题。请尽量提供可复现的信息，方便快速定位。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 清楚说明发生了什么，以及你认为哪里不符合预期。
+      placeholder: 请描述问题现象……
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 请按照实际操作顺序填写。
+      placeholder: |
+        1. 启动应用
+        2. 执行……
+        3. 出现……
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+      description: 正常情况下应该发生什么？
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境信息
+      description: 如操作系统、Go 版本、应用版本等。
+      placeholder: |
+        OS: Windows 11
+        Go: 1.xx
+        Version: v0.x.x
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 可附加日志、截图、错误堆栈或其他上下文。
